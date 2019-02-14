@@ -10,7 +10,7 @@ func Square(s int) (uint64, error) {
 	if s < 1 || s > 64 {
 		return 0, errors.New("invalid chessboard")
 	}
-	// math.Pow(2, float64(s-1)) <- did not help because it did not return the integer uint64
+	// math.Pow(2, float64(/*this is the given square*/i-1/*the minue one gives it reason to be accurate*/)) <- did not help because it did not return the integer uint64
 	return 1 << uint64(s-1), nil
 }
 
