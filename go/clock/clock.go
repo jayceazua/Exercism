@@ -25,7 +25,6 @@ import (
 //
 // For some useful guidelines on when to use a value receiver or a pointer
 // receiver see: https://github.com/golang/go/wiki/CodeReviewComments#receiver-type
-
 type Clock struct {
 	minutes int
 }
